@@ -122,3 +122,45 @@ Why `/20`? Finding the similarity in the octets of the 6 addresses, we find diff
 
 Converting those decimal values to binary and finding the similarities in the bits will leave you 4 bits of similiar bits. Hence, 8bits (1st octet) + 8bits (2nd octet) + 4bits (common bits on the third octet) = 20bits.
 
+### Some IP Services
+
+DHCP - has few methods:
+1. Client: DHCP DISCOVER
+2. Server: DHCP OFFER
+
+Leases. Leases has duration; Client can attempt to renew lease; Server can allow leases to expire, and Server pulls address from DHCP pool.
+
+By default, DHCP automatically assigns IP address to client. However, a client can choose to manually setup their IPv4 and IPv6 addresses.
+
+A server admin can also add a scope of IP address in their DHCP server.
+
+![DHCP Server Scope](img/dhcp_scope.png)
+
+DNS - Domain Name Systems; They map the numerical IP address to an easy-to-remember name.
+
+DNS Servers are located all over the world. Stored records are defined in a DNS zone.
+
+Cloud services like AWS provide DNS servers, like the Route 53.
+
+**RFC 1918 Addressing** and **NAT**
+- important keys for resolving the IPv4 shortage.
+
+Originally, the Network Address Translation (NAT) was a temporary bandage for the IPv4 address shortage.
+
+**RFC 1918**. Request for comments document numbered 1918 specified this idea.
+
+### Definition of Terms
+1. **Request** - sent by the client in response to an offer
+2. **Discover** - sent by the client to locate a DHCP server
+3. **Lease** - the amount of time a client can possess the IP address info
+4. **Pool** - used to configure DHCP in the network
+5. **Offer** - sent by the DHCP server
+6. **Zone** - A container for the DNS records
+7. **MX** - a mail server record
+8. **AAAA** - an IPv6 host record
+9. **CNAME** - an alias record
+
+### RFC 1918 private IP address ranges
+* Class A: 10.0.0.0 - 10.255.255.255
+* Class B: 172.16.0.0 - 172.31.255.255
+* Class C: 192.168.0.0 - 192.168.255.255
