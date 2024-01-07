@@ -60,3 +60,82 @@ No important notes.
 **FTP/S protocol**: uses ports 20 and 21; ports 989 and 990 for security. It is a protocol for transferring files.
 **DNS**: uses port 53, for host name resolution (AWS Route 53 for better memory)
 **DHCP**: uses port 67 and 68.
+
+#### Network Cabling
+Ethernet (Twisted Pair)
+* CAT5 (100Mbps)
+* CAT5e (1Gbps)
+* CAT6 (10Gbps)
+* Patch Cables (straight; TIA/EIA standards)
+
+Fiber Cables
+* Single
+    - Single beam, longer distance, faster
+* Multimode
+    - Multiple beam, shorter distance, slower
+
+#### Wireless Networking
+No notes. Just: wireless is less hassle over physical cabling.
+
+### Storage
+
+#### Storage Technologies
+Two types of Hard Drive:
+1. Magnetic: Inexpensive.
+    - RPM (revolutions per minute)
+    - Dimensions (is it for Laptop or PC?)
+    - Capacity
+    - IOPS (input/output per second)
+    - Seek time and latency
+    - Hot swappable
+2. SSD (Solid State Drive): Quiet, durable, yet expensive.
+3. Direct-attached storage (NAS)
+4. Network-attached storage (NAS)
+5. Storage-area network (SAN)
+6. Just a bunch of disks (JBOD)
+
+#### Understanding RAID
+RAID: Redudant array of independent disk; Idea of multiple disks putting them together in an array to function together as one storage server. It provides **FAULT TOLERANCE**.
+
+RAID 0
+- disk striping;
+- zero fault tolerance;
+- minimum of two disks;
+- increased read performance;
+- 100% drive space utilization
+
+RAID 1 (with fault tolerance)
+- disk mirroring;
+- **exactly** two disks;
+- increased read performance;
+- 50% drive space utilization: you can only store 1 TB of data in a 1TBx2 disks, due to mirroring.
+
+RAID 5
+- disk striping with parity;
+- minimum of three disks;
+- increased read performance;
+- efficient disk space utilization;
+- provides fault tolerance in case of single-drive failure.
+
+#### Capacity Planning
+What to consider?
+1. OS Growth
+    * patches
+    * service packs
+    * log files
+    * temp files
+2. Data Growth
+    * customer data
+    * archived data
+    * recovery data
+
+**Mitigation Strategies**
+1. Disk quotas
+    - soft quota (alerts)
+    - hard quota
+
+2. Compression
+3. Regular cleanup
+4. Routine archival
+
+### Security
