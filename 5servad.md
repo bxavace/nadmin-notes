@@ -173,3 +173,32 @@ UPS features
 3. Remote wipe - portable devices.
 4. Physical destruction
 5. Environmentally safe disposal
+
+### Virtualization and Cloud Computing
+Benefits of Virtualization:
+* reduced operating costs
+* minimal downtime
+* increased productivity
+* simplified data center management
+
+### Disaster Recovery
+Planning for a disaster
+- Business continuity plan
+- Disaster recovery plan
+- Business impact analysis
+
+#### Replication Methods
+1. disk to disk (disk mirroring)
+2. server to server (failover clustering)
+3. site to site
+
+Site Types
+1. hot site
+2. cold site
+3. warm site (between cold and hot site)
+
+#### Backup Strategies
+1. Full or normal backup - all data is backed up and the _archive_ bit is reset.
+2. Copy backup - all data is backup, but the _archive_ bit is not reset.
+3. Incremental backup - all data that has been changed since the last full/incremental backup is backed up and the archive bit is reset.
+4. Differential backup - all data that has been changed since the last full/incremental backup is backed up but the archive bit is not reset.
