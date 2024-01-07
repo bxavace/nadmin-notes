@@ -139,3 +139,37 @@ What to consider?
 4. Routine archival
 
 ### Security
+
+#### Server Hardening
+OS and Application Hardening
+- Stop and/or uninstall unneeded services.
+- Close unneeded ports.
+- Minimize software installations.
+- Keep security patches up to date.
+
+Hardware Hardening
+- Disable unneeded hardware and physical ports or devices
+- BIOS Password
+- Disable WOL (Wake-on-LAN)
+- Set appropriate boot order
+- Chassis locks
+
+### Environmental Protection
+use uninterruptible power supply (UPS)
+specifications to consider when buying UPS:
+1. Runtime
+2. Capacity
+3. Automated graceful shutdown
+4. Remote management
+
+UPS features
+1. power conditioning
+2. surge protection
+3. periodic testing
+
+#### Secure Storage Disposal
+1. Soft wipe
+2. Hard wipe - actually deletes everything.
+3. Remote wipe - portable devices.
+4. Physical destruction
+5. Environmentally safe disposal
